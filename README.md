@@ -14,17 +14,6 @@ The goal of this report is to find the drivers of a song's danceability score ac
 - [Executive Summary](#executive-summary)
 - [Dictionary](#dictionary)
 - [Pipeline](#pipeline)
-
-    -[Acquire](#acquire)
-    
-    -[Prepare](#prepare)
-    
-    -[Explore](#explore)
-    
-    -[Model](#model)
-    
-    -[Evaluate](#evaluate)
-    
 - [Conclusions](#conclusions)   
 - [Recreate these results](#recreate-these-results)
 
