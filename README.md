@@ -33,6 +33,7 @@ The goal is to use linear regression algorithms of machine learning models to pr
 
 ## Executive Summary 
 [(Back to top)](#table-of-contents)
+
 My best models Were the Polynomial Regressor (Degree 2) and the K Nearest Neighbor Regressor. I ultimately chose the KNN Regressor since it performed slightly better then the Polynomial Regressor.
 
 Metrics for the above features:
@@ -125,19 +126,19 @@ minutes                   |category           |Categorized duration of the track
 ### Model
 - Create baseline model using mean to compare to future models
 - Using Recursive Feature Elimination and Select KBest, I found the best features to use and decided on the following features:
-> popularity
-> energy
-> loudness
-> speechiness
-> acousticness
-> instrumentalness
-> valence
-> tempo
-> time_signature
-> name_length
-> song_name_length
-> (2, 3]
-> (5, 25]
+    - popularity
+    - energy
+    - loudness
+    - speechiness
+    - acousticness
+    - instrumentalness
+    - valence
+    - tempo
+    - time_signature
+    - name_length
+    - song_name_length
+    - (2, 3]
+    - (5, 25]
     
 - Models used:
     - OLS
@@ -148,10 +149,10 @@ minutes                   |category           |Categorized duration of the track
 - Calculated metrics for each model aid comparison
 - Choose K-Nearest Neighbor best model to evaluate with test dataset 
 -Best Model Parameters:
-> n_neighbors=8
-> weights='uniform'
-> algorithm='kd_tree'
-> leaf_size=20
+    - n_neighbors=8
+    - weights='uniform'
+    - algorithm='kd_tree'
+    - leaf_size=20
 
 
 ## Conclusions
