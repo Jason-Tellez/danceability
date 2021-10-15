@@ -1,5 +1,8 @@
 # Dance to the Music
 
+![](carlton.webp)
+
+
 By: Jason Tellez
 
 Date: October 14, 2021
@@ -34,7 +37,7 @@ The goal is to use linear regression algorithms of machine learning models to pr
 ## Executive Summary 
 [(Back to top)](#table-of-contents)
 
-My best models Were the Polynomial Regressor (Degree 2) and the K Nearest Neighbor Regressor. I ultimately chose the KNN Regressor since it performed slightly better then the Polynomial Regressor.
+My best models Were the Polynomial Regressor (Degree 2) and the K Nearest Neighbor Regressor. I ultimately chose the Polynomial Regressor since it was less overfit than the K-Nearest Neighbor Regressor.
 
 Metrics for the above features:
 
@@ -49,15 +52,6 @@ test_error: RMSE = 0.65299, R^2 = 0.69091
 - Despite my intial thoughts, popularity was not the biggest driver of danceability
 - The best performing models were K-Nearest Neighbor and Polynomial Regressor
     - KNN Regressor did slightly better and reasonably predicted danceability
-
-
-#### Next Steps
-
-Given more time, I would've wanted to:
-- create clusters to increase the accuaracy of my models
-- find genres of the songs and include that as a feature
-- see if the number of features on a song help predict danceability
-- determine if the number of "unique" words spoken could act as a predictor
 
 
 ## Data Dictionary
@@ -134,35 +128,35 @@ minutes                   |category           |Categorized duration of the track
     - instrumentalness
     - valence
     - tempo
+    - duration_ms
     - time_signature
     - name_length
     - song_name_length
+    - (0, 1]
     - (2, 3]
+    - (3, 4]
     - (5, 25]
     
 - Models used:
     - OLS
     - LassoLars
-    - Polynomial Regressor
+    - Polynomial
     - K-Nearest Neighbor
 - I visualized the results of the models and their predictions
 - Calculated metrics for each model aid comparison
-- Choose K-Nearest Neighbor best model to evaluate with test dataset 
+- K-Nearest Neighbor and Polynomial both preformed well compared to the other models, but I chose Polynomial even though K-Nearest performed slightly better. I did this because Polynomial is less overfit than K-Nearest.
 -Best Model Parameters:
-    - n_neighbors=8
-    - weights='uniform'
-    - algorithm='kd_tree'
-    - leaf_size=20
+    - degree=2
 
 
-## Conclusions
+### Conclusions
     
 - Most characteristics of danceability are correlated but none were strongly correlated enough to single-handedly predict danceability
 - I was a little surprised that popularity did not appear to be the biggest driver of danceability
 - Loudness was the biggest driver of danceability but not by much
 - Artist name length and song name length was had was surpisngly stronger predictor than anticipated
 
-#### Next Steps
+### Next Steps
 
 Given more time, I would've wanted to:
 - create clusters to increase the accuaracy of my models
