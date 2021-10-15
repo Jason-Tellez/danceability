@@ -1,14 +1,14 @@
 # Dance to the Music
 
-<gif src="https://media3.giphy.com/media/26gsaafwvzDkN7wJ2/giphy.gif?cid=ecf05e47mk2jqfkp8r5jpi7dl6s0j0uqmd9slqfqoa2aqrtj&rid=giphy.gif&ct=g" alt="Carlton" title="The One and Only" width="600" height="300" />
-
-
 By: Jason Tellez
 
 Date: October 14, 2021
 
+---
+
 The goal of this report is to find the drivers of a song's danceability score according to Spotify. Specifically, we will be looking at Spotify's top worldwide songs of the later portion on 2019, using the features provided by Spotify, and predicting a song's danceability score by creating machine learning models. The data was gathered and posted on Kaggle by user [rafaelnduarte](https://www.kaggle.com/rafaelnduarte/spotify-data-with-audio-features), who created the csv by using [Spotify's Web API](https://developer.spotify.com/documentation/web-api/).
 
+---
 
 ## Table of contents
 
@@ -20,6 +20,7 @@ The goal of this report is to find the drivers of a song's danceability score ac
 - [Conclusions](#conclusions)   
 - [Recreate these results](#recreate-these-results)
 
+---
 
 ## Project Summary
 [(Back to top)](#table-of-contents)
@@ -33,6 +34,7 @@ The goal is to use linear regression algorithms of machine learning models to pr
 3. This README that explains what the project is, how to reproduce the work, and any notes from project planning.
 4. A Trello board that details the process of creating this project.
 
+---
 
 ## Executive Summary 
 [(Back to top)](#table-of-contents)
@@ -47,12 +49,12 @@ validate metrics: RMSE = 0.60032, R^2 = 0.55669
 \
 test_error: RMSE = 0.65299, R^2 = 0.69091
 
----
 - No one feature was the end all be all of drivers, but some were certainly bigger drivers than others
 - Despite my intial thoughts, popularity was not the biggest driver of danceability
 - The best performing models were K-Nearest Neighbor and Polynomial Regressor
     - KNN Regressor did slightly better and reasonably predicted danceability
 
+---
 
 ## Data Dictionary
 [(Back to top)](#table-of-contents)
@@ -88,6 +90,7 @@ minutes                   |category           |Categorized duration of the track
 (4, 5] *New*              |uint8              |Duration of the song from 4 minute up to and including 5 minutes |
 (5, 25] *New*             |uint8              |Duration of the song from 5 minute up to and including 25 minutes |
  
+---
  
 ## Pipeline
 [(Back to top)](#table-of-contents)
@@ -148,8 +151,10 @@ minutes                   |category           |Categorized duration of the track
 -Best Model Parameters:
     - degree=2
 
+---
 
-### Conclusions
+## Conclusions
+[(Back to top)](#table-of-contents)
     
 - Most characteristics of danceability are correlated but none were strongly correlated enough to single-handedly predict danceability
 - I was a little surprised that popularity did not appear to be the biggest driver of danceability
@@ -164,6 +169,7 @@ Given more time, I would've wanted to:
 - see if the number of features on a song help predict danceability
 - determine if the number of "unique" words spoken could act as a predictor
 
+---
 
 # Recreate these results
 [(Back to top)](#table-of-contents)
@@ -176,5 +182,3 @@ Given more time, I would've wanted to:
             
 3. Download the ['world_data.csv' I chose from Kaggle](https://www.kaggle.com/rafaelnduarte/spotify-data-with-audio-features) or create your own using [Spotify's Web API](https://developer.spotify.com/documentation/web-api/)
 4. Download [the final jupyter notebook](https://github.com/Jason-Tellez/danceability/blob/main/final_nb.ipynb) and run all cells
-
-
