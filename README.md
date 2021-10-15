@@ -12,13 +12,13 @@ The goal of this report is to find the drivers of a song's danceability score ac
 
 ## Table of contents
 
-- [Table of contents](#table-of-contents)
+- [Table of Contents](#table-of-contents)
 - [Project Summary](#project-summary)
 - [Executive Summary](#executive-summary)
 - [Dictionary](#dictionary)
 - [Pipeline](#pipeline)
 - [Conclusions](#conclusions)   
-- [Recreate these results](#recreate-these-results)
+- [Recreate These Results](#recreate-these-results)
 
 ---
 
