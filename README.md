@@ -1,6 +1,6 @@
 # Dance to the Music
 
-![](carlton.webp)
+<gif src="https://media3.giphy.com/media/26gsaafwvzDkN7wJ2/giphy.gif?cid=ecf05e47mk2jqfkp8r5jpi7dl6s0j0uqmd9slqfqoa2aqrtj&rid=giphy.gif&ct=g" alt="Carlton" title="The One and Only" width="600" height="300" />
 
 
 By: Jason Tellez
