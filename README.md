@@ -43,16 +43,20 @@ My best models Were the Polynomial Regressor (Degree 2) and the K Nearest Neighb
 
 Metrics for the above features:
 
-train metrics: RMSE = 0.53334, R^2 = 0.71555
-\
-validate metrics: RMSE = 0.60032, R^2 = 0.55669
-\
-test_error: RMSE = 0.65299, R^2 = 0.69091
+    - train (In-Sample): 
+        - RMSE = 0.11071
+        - R-Square = 0.70010
+    - validate (Out-of-Sample)
+        - RMSE = 0.11521
+        - R-Square = 0.68731
+    - test (Out-of-Sample)
+        - RMSE = 0.11717
+        - R-Square = 0.66496
 
 - No one feature was the end all be all of drivers, but some were certainly bigger drivers than others
 - Despite my intial thoughts, popularity was not the biggest driver of danceability
 - The best performing models were K-Nearest Neighbor and Polynomial Regressor
-    - KNN Regressor did slightly better and reasonably predicted danceability
+    - Polynomial Regressor slightly better and reasonably predicted danceability
 
 ---
 
@@ -123,12 +127,16 @@ minutes                   |category           |Categorized duration of the track
 ### Model
 - Create baseline model using mean to compare to future models
 - Using Recursive Feature Elimination and Select KBest, I found the best features to use and decided on the following features:
+    
     - popularity
     - energy
+    - key
     - loudness
+    - mode
     - speechiness
     - acousticness
     - instrumentalness
+    - liveness
     - valence
     - tempo
     - duration_ms
@@ -136,8 +144,10 @@ minutes                   |category           |Categorized duration of the track
     - name_length
     - song_name_length
     - (0, 1]
+    - (1, 2])
     - (2, 3]
     - (3, 4]
+    - (4, 5]
     - (5, 25]
     
 - Models used:
